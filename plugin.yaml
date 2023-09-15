@@ -1,0 +1,44 @@
+schema-version: v2
+kind: plugin
+metadata:
+  name: s3-ale-plugin-teste
+  display-name: s3-ale-plugin-teste
+  description: teste para plugin infra s3
+  version: 0.0.1
+  picture: plugin.png
+spec:
+  type: infra
+  compatibility:
+    - python
+  about: docs/about.md
+  implementation: docs/implementation.md
+  release-notes: docs/release-notes-0.0.1.md
+  requirements: docs/requirements.md
+  technologies: # Ref: https://docs.stackspot.com/content-creator/studio/yaml-files/plugin-yaml/#technologies
+    - AWS S3
+  runtime:
+    environment:
+      - terraform-1-4
+      - aws-cli-2
+      - git-2
+  generates: 
+    connections:
+       - type: aws-s3-conn
+         alias: s3-aws-alias
+         outputs:
+           - from: aws-s3-bucket-name
+             to: bucket_name
+           - from: s3_bucket_arn
+             to: arn
+  inputs:
+    - label: S3_Bucket_Name
+      name: s3_bucket_name
+      type: text
+      required: true 
+    - label: Region
+      name: region
+      type: text
+      required: true
+      items:
+        - us-east-1
+        - sa-east-1
