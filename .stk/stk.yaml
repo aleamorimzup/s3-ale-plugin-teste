@@ -3,27 +3,29 @@ kind: manifest
 metadata:
   name: teste-ale
   description: teste infra s3
-  stack-version-id: 01HACN38N47SY6F36HF2A85775
-  stack: ale-s3
+  stack-version-id: 01HAD73WY2RZ0GWVJCN8NKH5Z0
+  stack: ale
 spec:
   type: infra
+  infra-id: 01HAD9PWA11AGMTVVSXY2X8BYT
   plugins:
-    - name: ale-private/ale-s3@0.0.1/s3-ale-plugin-teste@0.0.1
+    - name: idp-private/ale@0.0.1/s3-ale-plugin-teste@0.0.1
       alias: s3-ale-plugin-teste-1
-      plugin-version-id: 01HAAGDWM8D99ESK5MEA2TFWEJ
-      stack-version-id: 01HACN38N47SY6F36HF2A85775
+      plugin-version-id: 01HAD71TRXDY9P4Z5EW29MN59H
+      stack-version-id: 01HAD73WY2RZ0GWVJCN8NKH5Z0
       type: infra
       inputs:
-        s3_bucket_name: s3-ale
+        s3_bucket_name: s3-teste-ale-plugin
         region: sa-east-1
       inputs-envs: {}
       connections:
         generates:
           - type: aws-s3-conn
-            selected: s3-ale-teste
+            selected: deploy-by-plugin-s3-ale
             alias: s3-aws-alias
         requires: []
       links:
         generates: []
   global-inputs: {}
   global-computed-inputs: {}
+  repository: https://github.com/aleamorimzup/s3-ale-plugin-teste.git
