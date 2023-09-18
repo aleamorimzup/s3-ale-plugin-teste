@@ -2,26 +2,25 @@ schema-version: v2
 kind: manifest
 metadata:
   name: s3-ale
-  description: teste ale
-  stack-version-id: 01HAD73WY2RZ0GWVJCN8NKH5Z0
+  description: teste s3
+  stack-version-id: 01HAMSY6YQTDZWZSAAC3A4ARB2
   stack: ale
 spec:
   type: infra
-  infra-id: 01HAMC7PM86X300DA3SG4MD2BF
   plugins:
     - name: idp-private/ale@0.0.2/s3-ale-plugin-teste@0.0.2
       alias: s3-ale-plugin-teste-1
-      plugin-version-id: 01HAD71TRXDY9P4Z5EW29MN59H
-      stack-version-id: 01HAD73WY2RZ0GWVJCN8NKH5Z0
+      plugin-version-id: 01HAMSC92H64GH3Y1BRCK2N3N0
+      stack-version-id: 01HAMSY6YQTDZWZSAAC3A4ARB2
       type: infra
       inputs:
-        s3_bucket_name: s3-ale-plugin
+        s3_bucket_name: s3-ale-teste
         region: sa-east-1
       inputs-envs: {}
       connections:
         generates:
           - type: aws-s3-conn
-            selected: deploy-s3-ale
+            selected: s3-ale
             alias: s3-ale
         requires: []
       links:
