@@ -24,7 +24,7 @@ spec:
   generates: 
     connections:
        - type: aws-s3-conn
-         alias: s3-aws-alias
+         alias: s3-ale
          outputs:
            - from: aws-s3-bucket-name
              to: bucket_name

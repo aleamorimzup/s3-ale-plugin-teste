@@ -11,5 +11,5 @@ output "aws-s3-bucket-name" {
 }
 
 output "aws-s3-arn" {
-  value = var.bucket_name
-}
+  value = "${aws_s3_bucket.bucket_name.arn}"
+  }
