@@ -21,7 +21,7 @@ spec:
       connections:
         generates:
           - type: aws-s3-conn
-            selected: s3-ale
+            selected: deploy-s3-ale
             alias: s3-ale
         requires: []
       links:
