@@ -1,0 +1,32 @@
+{
+    "run_id": "01HAMR5YE2MYMZJ529JYM7Z0EF",
+    "app_id": null,
+    "infra_id": "01HAMC7PM86X300DA3SG4MD2BF",
+    "env_id": "01H3D9CZT92Q1AH7A3TFPDD8HQ",
+    "deployment_id": "01HAMR5YE26ZDMYYQ15S6PD7VV",
+    "type": "DEPLOY",
+    "status": "RUNTIME_ERROR",
+    "created_at": "2023-09-18 15:18:11.818414",
+    "updated_at": "2023-09-18 15:18:11.818414",
+    "applied_plugins": [
+        {
+            "plugin_applied_alias": "s3-ale-plugin-teste-1",
+            "tasks": [
+                {
+                    "id": "01HAMR5YFTF58XVJEN7ESAPQ4Z",
+                    "status": "INTERNAL_ERROR",
+                    "type": "IAC",
+                    "logs": "https://870332510631-runtime-manager-inventory.s3.sa-east-1.amazonaws.com/01H30CJQ5R7435RV0JAJHDRZ6E/01H4KQMDJ89FT3G9MPVMX1MFRJ/01HAMC7PM86X300DA3SG4MD2BF/01H3D9CZT92Q1AH7A3TFPDD8HQ/01HAMR5YE2MYMZJ529JYM7Z0EF/01HAMR5YFTF58XVJEN7ESAPQ4Z/stk-cli.out?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEML%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXNhLWVhc3QtMSJHMEUCIEQx2skj5bcDzChA9aJUm5hElKsHbm5XSq7rp8pjd4weAiEAjhNmR6TOqqULhfV2gbo7AXTzPKJwJ8dYcoFSHc0QW5EqigUIq%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARABGgw4NzAzMzI1MTA2MzEiDPLGVdgy1PmcXU0rOSreBFUkWRZolmbVsPPlZHEafjWqV9ibt0jSQP9fcOHGBYkkkV613ZUA6nLvPkk1ElWndO4ursrQyPiV9slIacr7HFUFQpaksj3Pd9GYZreA215QuKKs2AB0MJO8IUw36Ts2uZEdJ8hjii4%2BDUMcq86wIUJjh6vEdDCgjugSwmwXVmyJGbAVocr%2BkHjWCB7i5oPjSYgE2hnWSgQR%2BK83azzNcQhi4jeJboyQ6gj8zVKtgcVotFV7Dx5L8Sjg01JvbOInN7WYKkXPkWaDa5a265gCZFGRyL3eO4G4Sny2Zu8DANXjArbsDc%2FP2odJJHGbTRelGxCf%2FHMeGE7QRPjDqd3zlm2tNWkzXLW%2F0OxEy1hvPWzaHID%2FKT%2BEuXY7jAEREZp37gPIAWMNJwSox%2FkkeCM7SEh4t%2FhZcYTiMcJdD0LpwTSesKC%2BsT2jv1tht4%2FZdp9eiYHyYCOgyJhk95FriR3QapAZgLOYHhfLoX%2BrbMnCnJlrxjW7Nueh9yVw4PoRMLu9EUwmx67PEIiV12h49KzWIubIsKawy5ptFEgviR0ni1yYEkg%2BIoXgsxQvbKBPVpZcXFGAJvnazivpx%2BtKjosQK8BAWk4LhGh1v69BqOlgiWxVkpqUYCnxurKfrwndrmA%2B6YWVJx0y67OgxoS9wQQrtNlYLdgbk%2FDbiqjUoVnkKu4LZxcy6xISXrbdOc%2BU12d%2BYMQdd8iwAJWT7nqdq5ImzzuWYKTYcRI3IXQEpO77m6v6%2FiucqoxCXDowqB3YGXhzNDdUChG5Ncf%2B4VyTKM60UlENqq7dMQmfcVGRZ2%2BFTDCdl6KoBjqaAbpHQUco1hVV67SDFOz7yJuIpnR0aiCJ4bY2lG3E5l5oHhdtzFPPTbmKMrJLXmVSzg4Giywh%2FuIYb%2FAqYBDeDsZLpoZrdYPoZQNmN0cDvhW8s7%2FyI5%2FGUDP0Q9ab3oFyx9o3ss5DDYOMs%2BiLBSj%2BXX5vaCse2pRrjOaMZFAVH6MT7sHonHZlfOZtKqvyR4A9bC7MS5%2BrX3Qc8Q4%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230918T181810Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIA4VI64GGTQCUXSQ4S%2F20230918%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Signature=3a72bde47c89e66715f3e3c31626c3788c35b3ee0d8febfde25ecb1f119b9c1a",
+                    "error_details": "{errorMessage=error to apply plugins in stk-cli > Downloading plugin stackspot/idp-private/s3-ale-plugin-teste@0.0.1.\n> Applying plugin idp-private/ale@0.0.1/s3-ale-plugin-teste.\n> Fetching available connection types.\n> Fetching available connections in the workspace.\n> Fetching stack context in the workspace.\n\nERROR: NON_INTERACTIVE_MODE_ERROR\nx Non interactive mode enabled: The information to generate the following connections were not provided: s3-aws-alias.\n, err &{%!g(*os.ProcessState=&{6948 256 0xc000706120}) []}}"
+                },
+                {
+                    "id": "01HAMR5YFTG50DD37EKFT7Q72H",
+                    "status": "ABORTED",
+                    "type": "DEPLOY",
+                    "logs": null,
+                    "error_details": null
+                }
+            ]
+        }
+    ]
+}
