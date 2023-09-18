@@ -7,6 +7,7 @@ metadata:
   stack: ale
 spec:
   type: infra
+  infra-id: 01HAMW03XQK5AXKKHQYTEAC0A3
   plugins:
     - name: idp-private/ale@0.0.2/s3-ale-plugin-teste@0.0.2
       alias: s3-ale-plugin-teste-1
