@@ -9,7 +9,7 @@ spec:
   type: infra
   infra-id: 01HAMW03XQK5AXKKHQYTEAC0A3
   plugins:
-    - name: idp-private/ale@0.0.2/s3-ale-plugin-teste@0.0.2
+    - name: idp-private/ale@0.0.2/s3-ale-plugin-teste@0.0.3
       alias: s3-ale-plugin-teste-1
       plugin-version-id: 01HAMSC92H64GH3Y1BRCK2N3N0
       stack-version-id: 01HAMSY6YQTDZWZSAAC3A4ARB2
