@@ -1,5 +1,5 @@
-resource "aws_s3_bucket" "bucket_{{ bucket_name }}" {
-bucket = var.bucket_name
+resource "aws_s3_bucket" "bucket_name" {
+  bucket = "s3-ale-teste"
   acl = "private"
 }
 
