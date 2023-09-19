@@ -4,7 +4,7 @@ metadata:
   name: s3-ale-plugin-teste
   display-name: s3-ale-plugin-teste
   description: teste para plugin infra s3
-  version: 0.0.2
+  version: 0.0.4
   picture: plugin.png
 spec:
   type: infra
@@ -28,10 +28,10 @@ spec:
          outputs:
            - from: aws-s3-bucket-name
              to: bucket_name
-           - from: s3_bucket_arn
+           - from: s3-bucket-arn
              to: arn
   inputs:
-    - label: S3_Bucket_Name
+    - label: S3 Bucket Name
       name: s3_bucket_name
       type: text
       required: true 
@@ -40,5 +40,5 @@ spec:
       type: text
       required: true
       items:
-        - us-east-1
-        - sa-east-1
+        - "us-east-1"
+        - "sa-east-1"
