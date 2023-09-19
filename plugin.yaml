@@ -28,7 +28,7 @@ spec:
          outputs:
            - from: aws-s3-bucket-name
              to: bucket_name
-           - from: s3-bucket-arn
+           - from: aws-s3-arn
              to: arn
   inputs:
     - label: S3 Bucket Name
